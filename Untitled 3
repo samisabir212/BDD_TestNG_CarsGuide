@@ -1,0 +1,17 @@
+sprint 1
+
+feature: Login Feature
+
+Scenario:
+	As a user i want to login with my valid username and valid password
+
+Scenario:
+	User cannot login with a valid password and invalid username
+	
+Scenario:
+	User cannot login with a valid username and invalid password
+	
+Scenario: 
+	user cannot login with a s
+
+feature: Calender Feature

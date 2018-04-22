@@ -37,6 +37,7 @@ public class SeleniumDriver_zeus {
 	public String configPath = "/Users/sami/git/BDD_TestNG_CompleteFramework/src/main/java/com/Utilities/config.properties";
 	public static String or_Json = "/Users/sami/git/EclipseWorkSpace/BDD_BootCamp/src/resources/java/com/FreeCRM_PageLocators/OR.json";
 
+	
 	public String grid_Env = getConfig_PropertiesFile(configPath).getProperty("useGrid");
 	public String cloud_Env = getConfig_PropertiesFile(configPath).getProperty("useCloudEnv");
 

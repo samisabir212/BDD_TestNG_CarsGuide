@@ -20,12 +20,13 @@ public class CarsGuidePageActions {
 	 * supply driver and the page class containing the locators
 	 */
 	public CarsGuidePageActions() {
+		//this will get automatically initialized when called in another class
 
 		this.carsGuidePageLocators = new CarsGuidePageLocators();
 		PageFactory.initElements(SeleniumDriver_zeus.getDriver(), carsGuidePageLocators);
 		
-
 	}
+	
 	public void moveToCarForSaleMenu() throws InterruptedException {
 
 		Thread.sleep(5000);
@@ -37,7 +38,6 @@ public class CarsGuidePageActions {
 	public void clickSearchCarsLink() {
 		
 		carsGuidePageLocators.searchCarsLink.click();
-
 
 	}
 

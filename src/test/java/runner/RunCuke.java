@@ -42,9 +42,9 @@ public class RunCuke extends AbstractTestNGCucumberTests {
         // Loads the extent config xml to customize on the report.
         ExtentCucumberFormatter.loadConfig(new File("src/resources/test/extent-config.xml"));
         // User can add the system information as follows
-        ExtentCucumberFormatter.addSystemInfo("Browser Name", "Firefox");
-        ExtentCucumberFormatter.addSystemInfo("Browser version", "v31.0");
-        ExtentCucumberFormatter.addSystemInfo("Selenium version", "v2.53.0");
+        ExtentCucumberFormatter.addSystemInfo("Browser Name", "Chrome");
+        ExtentCucumberFormatter.addSystemInfo("Browser version", "v64.0");
+        ExtentCucumberFormatter.addSystemInfo("Selenium version", "v3.7.0");
 
         // Also you can add system information using a hash map
         Map systemInfo = new HashMap();

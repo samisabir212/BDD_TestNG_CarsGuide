@@ -2,6 +2,7 @@ package com.Steps;
 
 import java.util.List;
 
+import com.Utilities.Log;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.asserts.SoftAssert;
@@ -16,6 +17,7 @@ import cucumber.api.java.en.When;
 import pages.Actions.CarsGuidePageActions;
 import pages.Actions.CarsSearchPageActions;
 
+
 public class SearchCarsSteps {
 	
 	CarsGuidePageActions carsGuidePageActions = new CarsGuidePageActions();
@@ -26,6 +28,7 @@ public class SearchCarsSteps {
 public void i_am_on_the_Home_Page_of_CarsGuide_Website(String url) throws Throwable {
    
 	SeleniumDriver_zeus.openPage(url);
+	Log.info("navigated to "+ url);
 	
 }
 
@@ -35,6 +38,8 @@ public void i_move_to_Car_For_Sale_Menu(List<String> list) throws Throwable {
 	String menu = list.get(1);
 	System.out.println("Menu selected is "+ menu);
 	carsGuidePageActions.moveToCarForSaleMenu();
+	Log.info("mouse hovered over 'For Sale' menu");
+
 	
 	
 }
@@ -42,6 +47,7 @@ public void i_move_to_Car_For_Sale_Menu(List<String> list) throws Throwable {
 @And("^click on \"([^\"]*)\" link$")
 public void click_on_link(String searchCars) throws Throwable {
     carsGuidePageActions.clickSearchCarsLink();
+    Log.info("clicked search cars link");
 }
 
 @And("^select carbrand as \"([^\"]*)\" from AnyMake dropdown$")

@@ -21,8 +21,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class SeleniumDriver_zeus {
 	
 	
-	
+	/*
+	 * create a object of the class to invoke the driver in the @before class
+	 * */
 	private static SeleniumDriver_zeus seleniumDriver_zeus;
+	
 	public static WebDriver driver = null;
 	public static WebDriverWait waitDriver;
 	public final static int TIMEOUT = 30;

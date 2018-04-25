@@ -1,5 +1,6 @@
 package com.Steps;
 
+import com.Utilities.Log;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -23,6 +24,9 @@ public class New_After_Actions {
 	          
 	         }
 	    	 SeleniumDriver_zeus.tearDown();
+
+		  Log.endLog("test is ending");
+
 	    }
 
 }
